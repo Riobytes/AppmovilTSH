@@ -1,0 +1,109 @@
+<ion-header>
+
+    <ion-navbar>
+
+        <ion-buttons start>
+            <button ion-button menuToggle="">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
+
+        <ion-buttons end>
+            <button ion-button (click)="cargar(userPage)">
+                <ion-icon name="settings"></ion-icon>
+            </button>
+        </ion-buttons>
+
+        <ion-title>Embarcacion</ion-title>
+
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+        <ion-list>
+
+            <ion-item>
+                <ion-label color="primary">Nombre: </ion-label>
+                <ion-input type="text" placeholder="XXXX" disabled></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Matrícula: </ion-label>
+                <ion-input type="text" placeholder="HH-123"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Propietario: </ion-label>
+                <ion-input type="text" placeholder="Carlos Sarango"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Capitán: </ion-label>
+                <ion-input type="text" placeholder="Apellidos Nombres"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Fecha de Construcción: </ion-label>
+                <ion-input type="text" placeholder="0990123456"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Propulsión: </ion-label>
+                <ion-input type="text" placeholder="0"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Combustible: </ion-label>
+                <ion-input type="text" placeholder="0"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Tipo Embarcación: </ion-label>
+                <ion-input type="text" placeholder="ninguno" disabled></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Eslora Total: </ion-label>
+                <ion-input type="number" placeholder="0"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Puntual: </ion-label>
+                <ion-input type="number" placeholder="0"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Calado: </ion-label>
+                <ion-input type="number" placeholder="0"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Tonelaje Bruto: </ion-label>
+                <ion-input type="number" placeholder="0"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Capacidad Carga: </ion-label>
+                <ion-input type="number" placeholder="0"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary">Manga: </ion-label>
+                <ion-input type="number" placeholder="0"></ion-input>
+            </ion-item>
+
+        </ion-list>
+        <ion-list>
+            <button ion-item color="primary">
+                <ion-icon name="person"></ion-icon>
+                Tripulación
+            </button>
+            <button ion-item *ngFor="let item of lista">
+                <ion-icon name="person"></ion-icon>
+                {{item}}
+            </button>
+        </ion-list>
+    </ion-card>
+</ion-content>

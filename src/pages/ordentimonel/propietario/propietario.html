@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons start>
+            <button ion-button menuToggle (click)="abrirMenu()">
+                <ion-icon name="menu" item-left></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button (click)="cargar(userPage)">
+                <ion-icon name="settings"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>Propietario</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div>
+        <div class="row header">
+            <div class="col tabla centrar" col-3>
+                Nombres
+            </div>
+            <div class="col tabla centrar" col-3>
+                Teléfono
+            </div>
+            <div class="col tabla centrar" col-3>
+                Celular
+            </div>
+            <div class="col tabla centrar" col-3>
+                Email
+            </div>
+        </div>
+        <div class="row borde centrar">
+            <div class="row borde" col-12 *ngFor="let peli of peliculas">
+                <p class="col" col-3>
+                    {{peli["pelicula"]}}
+                </p>
+                <p class="col" col-3>
+                    {{peli["director"]}}
+                </p>
+                <p class="col" col-3>
+                    {{peli["anio"]}}
+                </p>
+                <p class="col" col-3>
+                    {{peli["dia"]}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -->
+</ion-content>

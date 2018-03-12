@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons start>
+            <button ion-button menuToggle (click)="abrirMenu()">
+                <ion-icon name="menu" item-left></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button (click)="cargar(userPage)">
+                <ion-icon name="settings"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>Puerto</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+            <ion-label color="primary">Descripción: </ion-label>
+            <ion-input type="text" placeholder="" disabled></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label color="primary">Estado: </ion-label>
+            <ion-input type="text" placeholder="Ninguno"></ion-input>
+        </ion-item>
+
+        <button ion-button color="secondary">Aceptar</button>
+        <button ion-button color="danger">Cancelar</button>
+
+    </ion-list>
+
+
+</ion-content>

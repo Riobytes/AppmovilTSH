@@ -1,0 +1,35 @@
+<ion-menu [content]="nav">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list>
+            <button ion-item (click)="cargar(tabsPage)">
+                <ion-icon name="menu" item-left></ion-icon>
+                Inicio
+            </button>
+            <button ion-item (click)="cargar(pedidoPage)">
+                <ion-icon name="basket" item-left></ion-icon>
+                Pedido
+            </button>
+            <button ion-item (click)="cargar(propietarioPage)">
+                <ion-icon name="person" item-left></ion-icon>
+                Propietario
+            </button>
+            <button ion-item (click)="cargar(puertoPage)">
+                <ion-icon name="boat" item-left></ion-icon>
+                Puerto
+            </button>
+            <button ion-item (click)="cargar(pedidoPage)">
+                <ion-icon name="power" item-left></ion-icon>
+                Cerrar Sección
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="tabsPage" #nav></ion-nav>
